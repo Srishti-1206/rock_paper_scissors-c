@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+void main()
+{
+int c;
+char y;
+do{
+printf("Rock Paper Scissor Shoot...\nEnter your choice:\n0 - Rock\n11 - Paper\n2 - Scissor\n");
+scanf("%d",&c);
+srand(time(NULL));
+int a=rand()%3;
+if (c==0){
+   if (a==1)
+      printf("rock vs paper\nBOT WINS");
+   else if (a==2)
+     printf("rock vs scissor\nYOU WIN");
+  else
+   printf("rock vs rock\nDRAW");
+}
+else if (c==1){
+  if(a==0)
+   printf("paper vs rock\nBOT WINS");
+ else if (a==2)
+  printf("paper vs scissor\nYOU WIN");
+else
+   printf("paper vs paper\nDRAW");
+}
+else if(c==2){
+ if(a==0)
+   printf("scissor vs rock\nBOT WINS");
+else if(a==1)
+    printf("scissor vs paper\nYOU WIN");
+ else
+   printf("scissor vs scissor\nDRAW");
+}
+else{
+ printf("invalid input");
+}
+printf("\ndo you want to continue playing\nenter y to continue else enter n\n");
+scanf(" %c",&y);
+}
+while(y=='y'||y=='Y');
+if(y=='y'||y=='Y'){
+}
+else{
+  printf("Game Over!\nThank you for playing :)\n");
+}
+}
