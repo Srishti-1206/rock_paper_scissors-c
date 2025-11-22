@@ -6,7 +6,7 @@ void main()
 int c;
 char y;
 do{
-printf("Rock Paper Scissor Shoot...\nEnter your choice:\n0 - Rock\n11 - Paper\n2 - Scissor\n");
+printf("Rock Paper Scissor Shoot...\nEnter your choice:\n0 - Rock\n1 - Paper\n2 - Scissor\n");
 scanf("%d",&c);
 srand(time(NULL));
 int a=rand()%3;
